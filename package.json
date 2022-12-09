@@ -1,59 +1,54 @@
 {
-  "name": "insureme.lk",
-  "version": "1.0.0",
+  "name": "developer-portfolio",
+  "version": "0.1.0",
   "private": true,
-  "description": "insureme.lk",
-  "author": "Mahesh Samudra",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "dev": "gatsby develop -o",
-    "start": "gatsby dev",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
   "dependencies": {
-    "@prismicio/react": "^2.4.3",
-    "axios": "^0.27.2",
-    "bootstrap": "^5.1.3",
-    "classnames": "^2.3.1",
-    "date-fns": "^2.29.1",
-    "form-data": "^4.0.0",
-    "gatsby": "^3.3.0",
-    "gatsby-plugin-google-marketing-platform": "^0.2.0",
-    "gatsby-plugin-google-tagmanager": "^4.19.0",
-    "gatsby-plugin-image": "^2.19.0",
-    "gatsby-plugin-manifest": "^4.19.0",
-    "gatsby-plugin-prismic-previews": "^5.2.8",
-    "gatsby-plugin-react-helmet": "^5.19.0",
-    "gatsby-plugin-sass": "^5.19.0",
-    "gatsby-plugin-sitemap": "^5.19.0",
-    "gatsby-source-prismic": "^4.0.0",
-    "lodash": "^4.17.21",
-    "mailgun.js": "^7.0.4",
-    "rc-slider": "^10.0.1",
-    "react": "^17.0.1",
-    "react-bootstrap": "^2.4.0",
-    "react-countup": "^6.3.0",
-    "react-datepicker": "^4.8.0",
-    "react-dom": "^17.0.1",
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/material": "^5.10.17",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-fast-marquee": "^1.2.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.4.0",
-    "react-router-dom": "^6.4.1",
-    "react-slick": "^0.29.0",
-    "sass": "^1.54.0",
+    "react-icons": "^4.2.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "^4.0.3",
+    "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.5",
-    "swiper": "^8.3.1",
-    "telemetry": "^0.1.0"
+    "validator": "^13.6.0",
+    "web-vitals": "^1.0.1"
   },
-  "resolutions": {
-    "babel-plugin-remove-graphql-queries": "2.9.12"
-},
-  "devDependencies": {
-    "gatsby-plugin-netlify": "^5.0.0",
-    "prettier": "^2.7.1"
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
