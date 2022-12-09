@@ -49,6 +49,9 @@
     "swiper": "^8.3.1",
     "telemetry": "^0.1.0"
   },
+  "resolutions": {
+    "babel-plugin-remove-graphql-queries": "2.9.12"
+},
   "devDependencies": {
     "gatsby-plugin-netlify": "^5.0.0",
     "prettier": "^2.7.1"
