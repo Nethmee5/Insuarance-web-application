@@ -1,0 +1,76 @@
+@import '../../../../styles/vars';
+
+.featured_blogs_container{
+    // width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    @media (min-width: $md) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @media (min-width: $lg) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    @media (min-width: $xxl) {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    @media (min-width: $xxxl) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.text_container{
+    padding: 20px;
+    background-color: white;
+
+    h2{
+        a{
+            font-size: 32px;
+            color: black;
+        }
+    }
+
+    p{
+        color: $lightText;
+        font-size: 16px;
+    }
+
+    @media (min-width: $md) {
+        padding: 20px 28px;
+        width: fit-content;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 630px;
+    }
+    @media (min-width: $lg) {
+        padding: 32px 40px;
+    }
+}
+
+.date_category{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 12px 0;
+    @media (min-width: $lg) {
+        margin: 20px 0;
+    }
+}
+
+.category{
+    width: auto !important;
+    display: inline-flex !important;
+    margin-right: 20px;
+    padding: 8px !important;
+}
+
+.date{
+    color: black;
+    font-size: 16px;
+}

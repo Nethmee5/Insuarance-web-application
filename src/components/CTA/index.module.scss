@@ -1,0 +1,89 @@
+@import "../../styles/_vars.scss";
+
+.cta_wrapper {
+  display: block;
+}
+
+.cta_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: $xl) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.text_form {
+  padding: 28px 10px;
+  border-radius: 16px;
+  background-color: $yellow;
+  max-width: 465px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: $hoverShadow600;
+  @media (min-width: $lg) {
+    max-width: 870px;
+    padding: 40px 60px;
+  }
+  @media (min-width: $xl) {
+    max-width: 1004px;
+  }
+}
+
+.text_wrapper {
+  margin-bottom: 24px;
+  h2 {
+    text-align: center;
+    color: $darkText;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  p {
+    color: $lightText;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  @media (min-width: $lg) {
+    margin-bottom: 0;
+    margin-right: 30px;
+    h2,
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.cta_form {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  input,
+  button {
+    width: 100%;
+  }
+  @media (min-width: $lg) {
+    width: 280px;
+    margin: 0;
+    margin-left: 30px;
+  }
+  @media (min-width: $xl) {
+    width: 415px;
+    max-width: none;
+    margin: 0;
+    margin-left: 30px;
+    div {
+      margin-bottom: 0;
+    }
+    input {
+      margin-right: 12px;
+      width: 220px;
+      margin-bottom: 0;
+    }
+    label {
+      text-align: left;
+    }
+    button {
+      max-width: 183px;
+    }
+  }
+}

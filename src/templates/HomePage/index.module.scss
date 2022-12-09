@@ -1,0 +1,31 @@
+@import '../../styles/_vars.scss';
+
+.radial_background{
+    background-image: radial-gradient(45.66% 45.66% at 76.94% 22.24%, rgba(251, 210, 0, 0.2) 0%, rgba(251, 210, 0, 0) 100%) , radial-gradient(45.07% 45.07% at 31.15% 58.09%, rgba(0, 148, 247, 0.15) 0%, rgba(0, 148, 247, 0) 100%) ;
+}
+
+.linear_background{
+    background-image: url('../../images/HomePage/egg_shape_background.svg'), linear-gradient(0deg, rgba(226, 242, 254, 0.28), rgba(226, 242, 254, 0.28), #ffffff);
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    backdrop-filter: blur(4px);
+    background-size: contain;
+    @media (min-width: $md) {
+        background-position: right 60px;
+        background-size: auto;
+    }
+    @media (min-width: $xl) {
+        background-position: right 100px;
+    }
+}
+
+.light_bg{
+    background-color: #F0F8FE;
+}
+
+.small_egg_bg{
+    background-image: url('../../images/Icons/small_egg.svg'), linear-gradient(0deg, rgba(226, 242, 254, 0.28), rgba(226, 242, 254, 0.28), #ffffff);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(4px);
+}

@@ -1,0 +1,38 @@
+@import "../../../styles/vars";
+
+.vision_container {
+  display: block;
+  background-color: #E2F2FE03;
+}
+
+.text_wrapper{
+  padding: 40px 0;
+  span{
+    font-weight: 500;
+    font-family: $avenir;
+    color: $lightText;
+  }
+  h2{
+    font-size: 44px;
+  }
+  @media (min-width: $lg) {
+    padding: 80px 0;
+  }
+}
+
+.seperator{
+  height: 4px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $blueText;
+  @media (min-width: $lg) {
+    max-width: 93%;
+  }
+  @media (min-width: $xxl) {
+    max-width: 89%;
+  }
+  @media (min-width: $xxxl) {
+    max-width: 1520px;
+  }
+}

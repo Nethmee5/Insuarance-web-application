@@ -1,0 +1,88 @@
+@import '../../../styles/vars';
+
+.details_container{
+    padding-bottom: 30px;
+    @media (min-width: $lg) {
+        padding-bottom: 50px;
+    }
+    @media (min-width: $xl) {
+        padding-bottom: 40px;
+    }
+}
+
+.details_wrapper{
+    padding-top: 40px;
+    @media (min-width: $md) {
+        padding-top: 60px;
+    }
+    @media (min-width: $xl) {
+        padding-top: 80px;
+    }
+
+    @media (min-width: $xl) {
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.heading{
+    margin-bottom: 40px;
+    h1{
+        color: $darkText;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    p{
+        color: $lightText;
+    }
+    a{
+        width: auto;
+        display: inline-block;
+    }
+    @media (min-width: $md) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.heading_text{
+    @media (min-width: $md) {
+        max-width: 465px;
+    }
+    @media (min-width: $lg) {
+        max-width: 720px;
+    }
+    @media (min-width: $xl) {
+        max-width: 500px;
+    }
+}
+
+.body{
+    ul{
+        li{
+            list-style-type: disc;
+        }
+    }
+    ol{
+        li{
+            list-style-type: decimal;
+        }
+    }
+    p{
+        color: $primaryColor;
+        font-weight: 500;
+    }
+    h4{
+        color: $primaryColor;
+        font-family: $avenir;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    em{
+        strong{
+            text-decoration: underline;
+        }
+    }
+}

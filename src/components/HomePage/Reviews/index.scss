@@ -1,0 +1,125 @@
+@import '../../../styles/_vars.scss';
+
+.review-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (min-width: $lg) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .review-wrapper{
+        max-width: 1080px !important;
+        margin-left: auto;
+        margin-right: auto;
+        h2{
+            color: $darkText;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .review-container{
+            background-color: #FFF8E0;
+            border-radius: 12px;
+            display: flex;
+            padding: 20px 32px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            .title{
+                img{
+                    width: 80px;
+                    margin-right: 10px;
+                    @media (min-width: $md) {
+                        width: 120px;
+                    }
+                }
+                a{
+                    color: $lightText;
+                    font-size: 12px;
+                }
+                h3{
+                    font-size: 24px;
+                    font-weight: 500;
+                    @media (min-width: $sm) {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .reviews-slider-wrapper{
+            .swiper-wrapper{
+                padding-bottom: 50px;
+                padding-left: 2px;
+            }
+            .swiper-slide{
+                border-radius: 12px;
+                width: 85vw;
+                max-width: 300px;
+                box-shadow: $hoverShadow100;
+                overflow: hidden;
+            }
+            .single-review{
+                height: 100%;
+                padding: 24px 32px;
+                background-color: #FFF8E0;
+                .profile{
+                    display: flex;
+                    margin-bottom: 12px;
+                    .image{
+                        width: 60px;
+                        margin-right: 20px;
+                    }
+                    .profile-info{
+                        h3{
+                            font-weight: 700;
+                            margin-bottom: 0;
+                        }
+                        .ratings{
+                            color: $yellow;
+                        }
+                        p{
+                            color: $lightText;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .review-text{
+                    h3{
+                        color: $primaryColor;
+                    }
+                    .read-more{
+                        display: block;
+                        margin: 16px 0;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        color: $lightText;
+                    }
+                }
+                .google{
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    .g-image{
+                        max-width: 40px;
+                        margin-right: 20px;
+                    }
+                    p{
+                        color: $lightText;
+                        font-size: 12px;
+                        margin-bottom: 0;
+                        line-height: 1;
+                    }
+                    a{
+                        display: block;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+

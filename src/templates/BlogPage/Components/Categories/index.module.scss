@@ -1,0 +1,51 @@
+@import '../../../../styles/vars';
+
+.categories{
+  margin-bottom: 20px;
+  h2{
+    margin-bottom: 20px;
+    @media (min-width: $xxl) {
+      margin-bottom: 32px;
+    }
+  }
+
+  ul{
+    li{
+      button{
+        text-decoration: none;
+        color: $blueText;
+        cursor: pointer;
+        border-radius: 0;
+        padding-bottom: 0px;
+      }
+      button:focus{
+        outline: none;
+        box-shadow: none;
+      }
+      @media (min-width: $xxl) {
+        margin-bottom: 20px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+    @media (min-width: $xxl) {
+      padding: 40px;
+      width: fit-content;
+    }
+  }
+
+  @media (min-width: $md) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: $xxl) {
+    margin-bottom: 0px;
+    order: 2;
+  }
+}
+
+.isActive {
+  font-weight: bold !important;
+  color: $darkText !important;
+  border-bottom: 2px solid $blueText !important;
+}

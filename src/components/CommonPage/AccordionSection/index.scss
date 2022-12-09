@@ -1,0 +1,181 @@
+@import "../../../styles/vars";
+
+.pb-container{
+  display: block;
+  padding: 40px 0;
+  background-color: $lightBlue;
+
+  .pb-wrapper{
+    .text-wrapper{
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 40px;
+      h2{
+        color: $primaryColor;
+        font-size: 40px;
+        margin-bottom: 16px;
+      }
+      p{
+        color: $lightText;
+        font-size: 16px;
+      }
+      @media (min-width: $lg) {
+        max-width: 500px;
+        margin-left: 0;
+        text-align: left;
+        margin-bottom: 0;
+      }
+    }
+
+    .accordion-wrapper{
+      .faq-accordian {
+        .accordion-item {
+          align-self: flex-start;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 16px 28px;
+          border-radius: 0px;
+          border-bottom: 1px solid $blueText;
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            margin: 0;
+          }
+          h2 {
+            height: 100%;
+            position: relative;
+            width: 100%;
+          }
+          p{
+            margin-bottom: 0;
+          }
+          .accordion-button {
+            padding: 0;
+            width: 100%;
+            max-width: 250px;
+            font-size: 20px;
+            position: static;
+            color: $darkText;
+            background-color: transparent;
+            border-bottom: none;
+            box-shadow: none;
+            &::after {
+              content: "+";
+              background-image: none;
+              font-family: $avenir;
+              color: $blueText;
+              font-size: 32px;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform-origin: 50% 50%;
+              transform: rotate(45deg);
+              font-weight: 100;
+              margin-top: -12px;
+              transition: $transition;
+              width: auto;
+              height: auto;
+            }
+            &:focus {
+              outline: none;
+              border: none;
+              box-shadow: none;
+            }
+            @media (min-width: $md) {
+              max-width: 600px;
+            }
+            @media (min-width: $lg) {
+              max-width: 364px;
+            }
+            @media (min-width: $xl) {
+              max-width: 412px;
+            }
+          }
+          .accordion-button.collapsed {
+            &:after {
+              transform-origin: 50% 50%;
+              transform: rotate(0deg);
+            }
+          }
+          .accordion-body{
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-top: 16px;
+            ul{
+              li{
+                list-style-type: disc;
+                color: $lightText;
+              }
+            }
+            div{
+              p{
+                color: $lightText;
+              }
+            }
+          }
+          @media (min-width: $md) {
+            max-width: none;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          @media (min-width: $lg) {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+        @media (min-width: $lg) {
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 24px;
+        }
+      }
+    }
+  }
+
+  div.seo-width{
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    .text-wrapper{
+      max-width: 620px;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      @media (min-width: $md) {
+        margin-bottom: 60px;
+      }
+      h2{
+        text-align: center;
+      }
+    }
+    .accordion-wrapper{
+      .faq-accordian{
+        .accordion-item{
+          border: 1px solid #0094f7;
+          box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+          margin-bottom: 24px;
+          @media (min-width: $xl) {
+            margin-bottom: 16px;
+          }
+          .accordion-header{
+            button{
+              @media (min-width: $xl) {
+                max-width: 566px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $lg) {
+    padding: 80px 0;
+  }
+}

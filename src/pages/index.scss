@@ -1,0 +1,17 @@
+@import "../styles/vars";
+
+.pi {
+  color: $yellow;
+  @media (min-width: $md) {
+    color: $blueText;
+  }
+  @media (min-width: $xl) {
+    color: $darkText;
+  }
+}
+.blogs-page {
+  background-color:rgba(226, 242, 254, 0.2);
+}
+.personal-insuarance-page{
+  background-color:rgba(226, 242, 254, 0.2);
+}

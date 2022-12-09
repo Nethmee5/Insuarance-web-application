@@ -1,0 +1,179 @@
+@import "../../styles/_vars.scss";
+
+.faq-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $lightBlue;
+  .faq-wrapper {
+    h2 {
+      margin-bottom: 28px;
+    }
+    .faqs-wrapper {
+      max-width: 1040px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      .faq-title-wrapper {
+        margin-bottom: 22px;
+        text-align: center;
+        max-width: 688px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .single-title {
+          display: inline-block;
+          margin-bottom: 20px;
+          h3 {
+            display: inline-block;
+            margin: 0 20px;
+            color: $blueText;
+            cursor: pointer;
+          }
+        }
+        .swiper {
+          .swiper-wrapper {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            .swiper-slide {
+              width: fit-content;
+            }
+          }
+        }
+        .active-faq {
+          h3 {
+            color: $darkText;
+            border-bottom: 2px solid $blueText;
+            padding-bottom: 4px;
+          }
+        }
+        @media (min-width: $lg) {
+          margin-bottom: 50px;
+          max-width: 850px;
+        }
+      }
+
+      .faq-body-wrapper {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+        .faq-accordian {
+          display: grid;
+          row-gap: 24px;
+          // justify-content: center;
+          .accordion-item {
+            align-self: flex-start;
+            min-height: 80px;
+            width: 100%;
+            max-width: 508px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 16px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px solid $blueText;
+            box-shadow: $hoverShadow500;
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              margin: 0;
+            }
+            h2 {
+              height: 100%;
+              position: relative;
+              width: 100%;
+            }
+            .accordion-button {
+              padding: 0;
+              width: 100%;
+              max-width: 250px;
+              font-size: 20px;
+              position: static;
+              color: $darkText;
+              background-color: transparent;
+              border-bottom: none;
+              box-shadow: none;
+              &::after {
+                content: "+";
+                background-image: none;
+                font-family: $avenir;
+                color: $blueText;
+                font-size: 32px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform-origin: 50% 50%;
+                transform: rotate(45deg);
+                font-weight: 100;
+                margin-top: -12px;
+                transition: $transition;
+                width: auto;
+                height: auto;
+              }
+              &:focus {
+                outline: none;
+                border: none;
+                box-shadow: none;
+              }
+              @media (min-width: $md) {
+                max-width: 600px;
+              }
+              @media (min-width: $lg) {
+                max-width: 364px;
+              }
+              @media (min-width: $xl) {
+                max-width: 412px;
+              }
+            }
+            .accordion-button.collapsed {
+              &:after {
+                transform-origin: 50% 50%;
+                transform: rotate(0deg);
+              }
+            }
+            .accordion-body {
+              padding-left: 0;
+              padding-right: 0;
+              ul {
+                li {
+                  list-style-type: disc;
+                  color: $lightText;
+                }
+              }
+              div {
+                p {
+                  color: $lightText;
+                }
+              }
+            }
+            @media (min-width: $md) {
+              max-width: none;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            @media (min-width: $lg) {
+              max-width: 508px;
+              margin-left: 0;
+              margin-right: 0;
+            }
+          }
+          @media (min-width: $lg) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 24px;
+          }
+        }
+        @media (min-width: $lg) {
+          max-width: none;
+        }
+      }
+    }
+  }
+  @media (min-width: $lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

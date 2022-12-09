@@ -1,0 +1,52 @@
+@import '../styles/vars';
+
+.f0f{
+    background-image: radial-gradient(82.12% 82.12% at 69.44% 29.47%, rgba(251, 210, 0, 0.2) 0%, rgba(251, 210, 0, 0) 100%), 
+    radial-gradient(78.33% 78.33% at 31.15% 58.09%, rgba(0, 148, 247, 0.15) 0%, rgba(0, 148, 247, 0) 100%);
+    article{
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        div{
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            h2{
+                font-size: 80px;
+                margin-bottom: 24px;
+                color: $primaryColor;
+                font-weight: 700;
+            }
+            h3{
+                color: $darkText;
+                margin-bottom: 24px;
+                font-weight: 700;
+            }
+            p{
+                color: $primaryColor;
+                margin-bottom: 24px;
+                font-weight: 500;
+            }
+            a{
+                display: inline-flex;
+                color: $primaryColor;
+                margin-bottom: 24px;
+                width: auto;
+            }
+            a:hover{
+                color: $primaryColor;
+            }
+        }
+        @media (min-width: $xl) {
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+    }
+}
+
+.inme{
+    max-width: 230px !important;
+    margin-left: auto;
+    margin-right: auto;
+}

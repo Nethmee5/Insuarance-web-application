@@ -1,0 +1,24 @@
+@import "../../../styles/vars";
+
+.about_container {
+  display: block;
+  padding: 40px 0;
+  background-color: #E2F2FE03;
+  @media (min-width: $lg) {
+    padding: 80px 0;
+  }
+}
+
+.about_wrapper{
+  h2{
+    font-size: 44px;
+    color: $primaryColor;
+  }
+  p{
+    font-size: 20px;
+    color: $lightText;
+    strong{
+      color: $darkText;
+    }
+  }
+}

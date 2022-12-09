@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Avenir;
+    font-weight: 400;
+    src: url("AvenirLTStd-Roman.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: bold;
+    src: url("AvenirLTStd-Black.otf") format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: 300;
+    src: url("AvenirLTStd-Book.otf") format("opentype");
+    font-display: swap;
+}

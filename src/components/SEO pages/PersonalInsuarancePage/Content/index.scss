@@ -1,0 +1,85 @@
+$small: 576px;
+$medium: 576px;
+
+.content-section{
+    .title-2 {
+        //above 576
+        @media screen and (min-width: 0px) {
+        width: 100%;
+        max-width: 886px;
+        text-align: center;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        color: #02114E;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        @media screen and (min-width: $medium) {
+            //below 576
+         width: 100%;
+        max-width: 886px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        color: #02114E;
+        align-items: baseline;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+      }
+      
+      @media screen and (min-width: 0px) {
+        width: 100%;
+        max-width: 886px;
+        text-align: center;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        color: #02114E;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        @media screen and (min-width: $medium) {
+            //below 576
+         width: 100%;
+        max-width: 886px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        color: #02114E;
+        align-items: baseline;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .st-two{
+        width: 100%;
+        max-width: 886px;
+        color: #545A75;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

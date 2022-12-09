@@ -1,0 +1,71 @@
+@import "../../../styles/vars";
+
+.hero_container{
+  display: block;
+  padding-top: 20px;
+  background-image: radial-gradient(45.66% 45.66% at 76.94% 22.24%, rgba(251, 210, 0, 0.2) 0%, rgba(251, 210, 0, 0) 100%),
+  radial-gradient(45.07% 45.07% at 31.15% 58.09%, rgba(0, 148, 247, 0.15) 0%, rgba(0, 148, 247, 0) 100%);
+  @media (min-width: $lg) {
+    padding-top: 40px;
+  }
+}
+
+.hero_wrapper{
+  position: relative;
+  @media (min-width: $lg) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (min-width: $xxl) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (min-width: $xxxl) {
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.text_container{
+  text-align: left;
+  padding: 20px 16px;
+  max-width: 736px;
+  h1{
+    color: $darkText;
+    margin-bottom: 20px;
+  }
+  h3{
+    color: $lightText;
+    margin-bottom: 20px;
+  }
+  h4{
+    color: $blueText;
+  }
+  @media (min-width: $md) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    transform: translateY(10%);
+    padding: 20px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.9%, rgba(255, 255, 255, 0.95) 61.98%);
+  }
+  @media (min-width: $lg) {
+    max-width: 900px;
+    padding: 20px 28px;
+    margin-left: 40px;
+    transform: translateY(20%);
+  }
+  @media (min-width: $xxl) {
+    left: 120px;
+  }
+}
+
+.img_container{
+  @media (min-width: $md) {
+    // padding-top: 245px;
+  }
+  @media (min-width: $lg) {
+    // padding-top: 200px;
+  }
+}

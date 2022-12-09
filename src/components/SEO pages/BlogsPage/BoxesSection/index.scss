@@ -1,0 +1,67 @@
+@import "../../../../styles//vars";
+
+.boxes-section {
+  // max-width: 100%;
+  h3 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #2f2f2f;
+    text-align: center;
+
+    p {
+      color: $blueText;
+    }
+  }
+  .box-container {
+    padding-top: 40px;
+    width: 100%;
+    align-items: stretch;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    .column-1 {
+      background: #00194d;
+    }
+    .column-2 {
+      background: #0d4ac9;
+    }
+    .column-3 {
+      background: #5089ff;
+    }
+
+    .single-box-card{
+      padding: 30px 36px;
+      .number {
+        font-family: "HelveticaNeue";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 100%;
+        color: rgba(255, 255, 255, 0.2);
+        top: 36px;
+      }
+      .title-1 {
+        font-family: "Helvetica Neue";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: #ffffff;
+        padding-top: 32px;
+      }
+      .txt {
+        font-family: "Avenir";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #ffffff;
+        padding-top: 14px;
+      }
+    }
+
+  }
+}

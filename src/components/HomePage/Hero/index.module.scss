@@ -1,0 +1,246 @@
+@import "../../../styles/_vars.scss";
+
+.homepage_hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.float_mascot_container {
+  position: absolute;
+  right: -60px;
+  top: 45px;
+  width: 130px;
+  z-index: -1;
+  @media (min-width: $sm) {
+    display: none;
+  }
+}
+
+.hero_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: $md) {
+    padding-top: 80px;
+  }
+  @media (min-width: $xl) {
+    padding-top: 100px;
+  }
+  @media (min-width: $xxl) {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+.hero_text_form {
+  margin-bottom: 40px;
+  @media (min-width: $lg) {
+    max-width: 420px;
+    margin-bottom: 0;
+  }
+  @media (min-width: $xl) {
+    margin-right: 60px;
+  }
+}
+
+.hero_text {
+  max-width: 90%;
+  h1 {
+    margin-bottom: 20px;
+    color: $darkText;
+  }
+  p {
+    margin-bottom: 32px;
+    color: $lightText;
+  }
+  @media (min-width: $sm) {
+    max-width: none;
+  }
+}
+
+.hero_form_container {
+  width: 100%;
+  max-width: 315px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  @media (min-width: $md) {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: initial;
+    form {
+      width: 100%;
+      div {
+        margin-bottom: 0;
+        margin-right: 12px;
+      }
+      input:not([type="checkbox"]) {
+        margin-bottom: 0;
+        padding-right: 54px !important;
+        @media (min-width: $md) {
+          width: 220px;
+        }
+      }
+      label {
+        text-align: left;
+      }
+      button {
+        width: auto;
+        padding-left: 15px;
+        padding-right: 16px;
+        @media (min-width: $md) {
+          width: 185px;
+        }
+      }
+    }
+  }
+}
+
+.installment_scheme {
+  div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    h4 {
+      color: $lightText;
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+      span {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $yellow;
+        margin-right: 6px;
+        display: block;
+      }
+    }
+  }
+}
+
+div.installment_link {
+  display: block;
+  margin-bottom: 8px;
+  a {
+    color: $blueText;
+    display: flex;
+    align-items: center;
+    transition: $transition;
+    img {
+      max-width: 20px;
+      margin-left: 5px;
+    }
+    cursor: pointer;
+  }
+  a:hover {
+    color: $darkText;
+  }
+  div {
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: $blueText;
+    transition: $transition;
+  }
+}
+
+.installment_link:hover div {
+  width: 175px;
+}
+
+.mascot_video_container {
+  width: 100%;
+}
+
+.mascot_container {
+  display: none;
+  width: 40%;
+  z-index: 5;
+  position: absolute;
+  bottom: 20px;
+  // overflow: hidden;
+  left: 0;
+  @media (min-width: $sm) {
+    display: block;
+  }
+  @media (min-width: $md) {
+    width: 100%;
+    img {
+      width: 28%;
+    }
+    left: 15%;
+  }
+  @media (min-width: $lg) {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+    left: -20px;
+  }
+}
+
+.video_container {
+  width: 100%;
+  z-index: 6;
+  background-color: $darkText;
+  box-shadow: $hoverShadow600;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    img{
+      transition: $transition;
+      max-width: 32px;
+      max-height: 32px;
+      margin-left: 5px;
+      &:hover {
+        box-shadow: $hoverShadow500;
+      }
+    }
+  }
+
+  @media (min-width: $sm) {
+    width: 80%;
+  }
+  @media (min-width: $md) {
+    margin-right: 15%;
+    width: 55%;
+  }
+  @media (min-width: $lg) {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+
+.bullets {
+  opacity: 0;
+}
+
+.fade_bullets {
+  animation: fade 4s linear forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

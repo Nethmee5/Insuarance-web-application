@@ -1,0 +1,265 @@
+@import "../../../styles/_vars.scss";
+
+.footer_container {
+  position: relative;
+}
+
+.background_img_curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86px;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 240px 10px;
+  align-items: flex-start;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    @media (min-width: $sm) {
+      width: 101%;
+    }
+  }
+  @media (min-width: $lg) {
+    grid-template-columns: 1fr 240px 210px;
+  }
+  @media (min-width: $xl) {
+    grid-template-columns: 1fr 240px 1fr;
+  }
+}
+
+.thin_line {
+  background-color: $yellow;
+  height: 20px;
+  width: 110%;
+}
+.thick_line {
+  background-color: $yellow;
+  height: 100%;
+  width: 100%;
+}
+
+.footer_content_container {
+  padding-top: 46px;
+  @media (min-width: $md) {
+    padding-top: 66px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: $lg) {
+    max-width: none;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact {
+  @media (min-width: $sm) {
+    min-width: 280px;
+  }
+}
+
+.info_links {
+  @media (min-width: $md) {
+    margin-bottom: 52px;
+  }
+}
+
+.company_info {
+  margin-bottom: 40px;
+  color: $lightText;
+  max-width: 210px;
+  img {
+    width: 160px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: $xl) {
+      width: 180px;
+    }
+  }
+  div {
+    img {
+      max-width: 130px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h3 {
+      color: $blueText;
+      font-weight: 500;
+      display: flex;
+      font-size: 18px;
+      justify-content: center;
+      align-items: center;
+      span {
+        display: block;
+        width: 4px;
+        height: 2px;
+        background-color: $yellow;
+        margin: 0 4px;
+      }
+    }
+  }
+  @media (min-width: $md) {
+    width: 280px;
+    margin-bottom: 0px;
+    margin-right: 128px;
+  }
+  @media (min-width: $lg) {
+    margin-right: 120px;
+  }
+}
+
+.quick_links {
+  width: 100%;
+  max-width: 280px;
+  ul {
+    min-width: 80px;
+    li {
+      margin-bottom: 20px;
+      width: 100%;
+      a {
+        color: $darkText;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    &:last-of-type {
+      margin-left: 40px;
+      padding-left: 0;
+      min-width: 142px;
+    }
+  }
+  margin-bottom: 44px;
+  @media (min-width: $md) {
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }
+  @media (min-width: $lg) {
+    max-width: 400px;
+  }
+}
+
+.subscribe {
+  @media (min-width: $sm) {
+    width: 45%;
+  }
+  @media (min-width: $md) {
+    width: auto;
+  }
+}
+
+.subscribe_info {
+  @media (min-width: $lg) {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+  @media (min-width: $xxl) {
+    padding-top: 50px;
+    padding-left: 0;
+  }
+}
+
+.subscribe_form {
+  width: 280px;
+  margin-bottom: 40px;
+  h2 {
+    color: $lightText;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  @media (min-width: $sm) {
+    width: 100%;
+  }
+  @media (min-width: $md) {
+    margin-bottom: 0px;
+    width: 280px;
+  }
+  @media (min-width: $lg) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: $xl) {
+    max-width: 220px;
+    margin-right: 40px;
+  }
+  @media (min-width: $xxl) {
+    max-width: 280px;
+  }
+}
+
+.contact_info {
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $darkText;
+    text-decoration: none;
+    margin-right: 20px;
+    img {
+      display: block;
+      width: 14px;
+      margin-right: 9px;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  margin-bottom: 12px;
+}
+
+.address {
+  max-width: 280px;
+  margin-bottom: 12px;
+  color: $darkText;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: $darkText;
+    cursor: pointer;
+  }
+  a:hover {
+    color: $darkText;
+  }
+  @media (min-width: $lg) {
+    max-width: 260px;
+  }
+}
+
+.socials {
+  p {
+    color: $darkText;
+    margin-right: 14px;
+  }
+  img {
+    margin-right: 14px;
+    width: 24px;
+  }
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $yellow;
+  margin-bottom: 12px;
+  @media (min-width: $md) {
+    margin-top: 20px;
+  }
+  @media (min-width: $md) {
+    margin-top: 24px;
+  }
+}
+
+.copyrights {
+  margin-bottom: 16px;
+}

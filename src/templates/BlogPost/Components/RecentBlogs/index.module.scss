@@ -1,0 +1,40 @@
+@import '../../../../styles/vars';
+
+.recent_blogs{
+    h2{
+        margin-bottom: 40px;
+    }
+}
+
+.single_blog{
+    margin-bottom: 20px;
+    h4{
+        font-weight: 700;
+        margin: 20px 0;
+        a{
+            color: black;
+        }
+    }
+}
+
+.date_category{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 12px 0;
+    @media (min-width: $lg) {
+        margin: 20px 0;
+    }
+}
+
+.category{
+    width: auto !important;
+    display: inline-flex !important;
+    margin-right: 20px;
+    padding: 8px !important;
+}
+
+.date{
+    color: black;
+    font-size: 16px;
+}

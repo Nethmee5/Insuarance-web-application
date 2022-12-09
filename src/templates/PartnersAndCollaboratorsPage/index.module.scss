@@ -1,0 +1,16 @@
+@import '../../styles/vars';
+
+.pc_container{
+    background-color: #F7FCFF;
+    padding: 40px 0;
+    color: $primaryColor;
+    span{
+        color: $lightText;
+    }
+    @media (min-width: $md) {
+        padding: 60px 0;
+    }
+    @media (min-width: $xl) {
+        padding: 80px 0;
+    }
+}

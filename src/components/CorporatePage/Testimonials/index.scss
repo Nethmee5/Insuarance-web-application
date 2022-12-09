@@ -1,0 +1,93 @@
+@import "../../../styles/_vars.scss";
+
+.corporate-testimonials-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $lightBlue;
+  .corporate-testimonials-wrapper {
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #000;
+      @media (min-width: $lg) {
+        margin-bottom: 80px;
+      }
+    }
+    .swiper-wrapper {
+      padding-bottom: 50px;
+      padding-top: 20px;
+      padding-left: 20px;
+      // height: auto;
+    }
+    .swiper-slide {
+      width: 85vw;
+      max-width: 400px;
+      box-shadow: $hoverShadow100;
+      border-radius: 12px;
+      // height: auto;
+    }
+    .single-testimonial {
+      background-image: radial-gradient(
+          82.12% 82.12% at 69.44% 29.47%,
+          rgba(251, 210, 0, 0.2) 0%,
+          rgba(251, 210, 0, 0) 100%
+        ),
+        radial-gradient(
+          78.33% 78.33% at 31.15% 58.09%,
+          rgba(0, 148, 247, 0.15) 0%,
+          rgba(0, 148, 247, 0) 100%
+        );
+      height: 100%;
+      position: relative;
+      padding: 80px 48px 64px 48px;
+      border-radius: 12px;
+      box-shadow: $hoverShadow400;
+      .testimonial-quote {
+        max-width: 118px;
+        position: absolute;
+        left: -10px;
+        top: -20px;
+      }
+      .testimonial-text-container {
+        img {
+          margin-bottom: 24px;
+          max-width: 140px;
+          margin-left: auto;
+          margin-right: auto;
+          object-fit: contain;
+        }
+        p {
+          color: $lightText;
+          text-align: center;
+          margin-bottom: 24px;
+        }
+        h4 {
+          color: $primaryColor;
+          text-align: center;
+          font-weight: 500;
+          font-size: 20px;
+          &:first-of-type {
+            color: $blueText;
+          }
+        }
+        h5 {
+          font-size: 16px;
+          font-family: $avenir;
+          color: $primaryColor;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media (min-width: $md) {
+    padding-left: 20px;
+  }
+  @media (min-width: $lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

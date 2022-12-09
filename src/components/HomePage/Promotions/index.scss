@@ -1,0 +1,117 @@
+@import '../../../styles/_vars.scss';
+
+.promotion-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (min-width: $xl) {
+        padding-top: 60px;
+    }
+}
+
+.promotions-wrapper{
+    .title-form{
+        padding: 0 20px;
+        h2{
+            text-align: center;
+            font-weight: 700;
+        }
+        .ch2 h2{
+            margin-bottom: 12px;
+            color: $primaryColor;
+        }   
+        h2{
+            color: $blueText;
+            margin-bottom: 28px;
+        }
+        p{
+            text-align: center;
+            color: $lightText;
+            margin-bottom: 24px;
+        }
+
+        .me-form-container{
+            .form-wrapper{
+                justify-content: center;
+                @media (min-width: $lg) {
+                    justify-content: flex-start;
+                }
+            }
+            .form-message{
+                width: 100%;
+                @media (min-width: $md) {
+                    max-width: 370px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @media (min-width: $lg) {
+                    max-width: none;
+                }
+            }
+        }
+        @media (min-width: $lg) {
+            h2,p{
+                text-align: left;
+            }
+            order: 2;
+            max-width: 410px;
+            margin-right: auto;
+        }
+        @media (min-width: $md) {
+            padding: 0 40px;
+        }
+        @media (min-width: $lg) {
+            padding: 0;
+        }
+    }
+
+    .promotion-carousel-container{
+        padding-left: 20px;
+        overflow: hidden;
+        .promotion-carousel-wrapper{
+            .swiper-wrapper{
+                padding-bottom: 30px;
+                @media (min-width: $sm) {
+                    // justify-content: center;
+                }
+            }
+            .swiper-slide{
+                max-width: 80vw;
+                box-shadow: $hoverShadow100;
+                @media (min-width: $md) {
+                    max-width: 400px;
+                }
+                @media (min-width: $lg) {
+                    max-width: none;
+                }
+            }
+            .img-container{
+                width: 100%;
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+        @media (min-width: $md) {
+            padding-left: 40px;
+        }
+        @media (min-width: $lg) {
+            max-width: 425px;
+            margin-left: auto;
+            padding-left: 0;
+        }
+        @media (min-width: $xl) {
+            max-width: 572px;
+            padding-left: 0;
+        }
+    }
+
+    @media (min-width: $lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        column-gap: 40px; 
+    }
+    @media (min-width: $xl) {
+        column-gap: 80px; 
+    }
+}

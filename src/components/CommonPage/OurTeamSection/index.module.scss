@@ -1,0 +1,75 @@
+@import "../../../styles/vars";
+
+.team_container {
+  display: block;
+  padding: 40px 0;
+  background-image: radial-gradient(45.66% 45.66% at 76.94% 22.24%, rgba(255, 205, 3, 0.2) 0%, rgba(255, 205, 3, 0) 100%),
+   radial-gradient(45.07% 45.07% at 31.15% 58.09%, rgba(3, 54, 255, 0.15) 0%, rgba(3, 54, 255, 0) 100%);
+   @media (min-width: $lg) {
+    padding: 80px 0;
+   }
+}
+
+.title{
+  h2{
+    font-size: 44px;
+    color: $darkText;
+    text-align: center;
+  }
+  margin-bottom: 40px;
+  @media (min-width: $md) {
+    margin-bottom: 60px;
+  }
+}
+
+.team_grid{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15px;
+  row-gap: 20px;
+  @media (min-width: $md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+  }
+}
+
+.single_member{
+  max-width: 220px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: $hoverShadow100;
+}
+
+.body{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  height: fit-content;
+  text-align: center;
+  padding: 16px 0;
+  h2{
+    color: $blueText;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  h3{
+    color: $lightText;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  @media (min-width: $md) {
+    padding: 20px;
+  }
+  @media (min-width: $lg) {
+    padding: 16px 20px;
+  }
+}

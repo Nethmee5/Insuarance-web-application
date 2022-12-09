@@ -1,0 +1,74 @@
+@import "../../../styles/vars";
+
+.core-values-container{
+  display: block;
+  padding: 40px 0;
+
+  .core-values-wrapper{
+    .cv-text-wrapper{
+      h2{
+        font-size: 44px;
+        color: $primaryColor;
+      }
+      p{
+        color: $lightText;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .cv-slider-wrapper{
+    padding-right: 0 !important;
+    .swiper{
+      padding-right: 40px;
+    }
+    .swiper-wrapper{
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide{
+        width: 90vw;
+        max-width: 380px;
+        height: auto;
+    }
+    .single-value{
+      padding: 24px 32px 84px 32px;
+      height: 100%;
+      border-radius: 12px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+      background-image: radial-gradient(82.12% 82.12% at 69.44% 29.47%, rgba(251, 210, 0, 0.2) 0%, rgba(251, 210, 0, 0) 100%), 
+      radial-gradient(78.33% 78.33% at 31.15% 58.09%, rgba(0, 148, 247, 0.15) 0%, rgba(0, 148, 247, 0) 100%);
+      
+      span{
+        display: block;
+        color: $blueText;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+      h3{
+        color: $primaryColor;
+        font-size: 32px;
+        margin-bottom: 16px;
+      }
+      p{
+        color: $lightText;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .cv-slider-wrapper.section-center{
+    @media (min-width: 1680px) {
+      padding-left: 64px;
+      .swiper{
+        padding-right: 0px;
+      }
+    }
+  }
+
+  @media (min-width: $lg) {
+    padding: 80px 0;
+  }
+}

@@ -1,0 +1,66 @@
+@import '../../../styles/vars';
+
+.form_wrapper{
+    padding-bottom: 60px;
+    max-width: 545px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    @media (min-width: $lg) {
+        padding-top: 50px;
+    }
+    @media (min-width: $xl) {
+        padding-top: 40px;
+    }
+    h4{
+        color: $blueText;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+
+    form{
+        text-align: center;
+        input{
+            margin-bottom: 20px;
+            @media (min-width: $md) {
+                margin-bottom: 0;
+            }
+        }
+        input + label{
+            text-align: left;
+            color: #9c9991;
+        }
+        textarea + label{
+            text-align: left;
+            color: #9c9991;
+        }
+        input, textarea{
+            border-color: $darkText;
+        }
+        textarea{
+            padding-bottom: 16px !important;
+            height: auto;
+            resize: vertical;
+        }
+        button{
+            width: auto !important;
+            display: inline-block;
+        }
+    }
+
+    @media (min-width: $md) {
+        padding-bottom: 120px;
+    }
+    @media (min-width: $xl) {
+        padding-bottom: 80px;
+    }
+}
+
+.form_row{
+    @media (min-width: $md) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 12px;
+        margin-bottom: 20px;
+    }
+}

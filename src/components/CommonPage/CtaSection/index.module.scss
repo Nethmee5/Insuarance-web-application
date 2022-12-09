@@ -1,0 +1,36 @@
+@import "../../../styles/vars";
+
+.cta_container {
+  display: block;
+  padding: 20px 0;
+  background-color: #E2F2FE03;
+}
+
+.cta_block{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 32px;
+  text-align: center;
+  box-shadow: 0px 8px 64px rgba(0, 0, 0, 0.12);
+  background-color: white;
+  border-radius: 16px;
+  h2{
+    color: $primaryColor; 
+    margin-bottom: 20px;
+    @media (min-width: $md) {
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+  }
+  a{
+    width: auto;
+    display: inline-flex;
+  }
+  a:hover{
+    color: initial;
+  }
+  @media (min-width: $md) {
+    padding: 40px 60px;
+  }
+}

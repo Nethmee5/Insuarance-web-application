@@ -1,0 +1,141 @@
+@import "../../../styles/_vars.scss";
+
+.me-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: $xl) {
+    padding-top: 120px;
+  }
+}
+
+.title-form {
+  h2 {
+    text-align: center;
+    color: $darkText;
+    margin-bottom: 40px;
+    max-width: 688px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: $xl) {
+      text-align: left;
+    }
+  }
+  .me-form-container {
+    width: 100%;
+    max-width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    @media (min-width: $md) {
+      max-width: none;
+      form {
+        width: 100%;
+        div {
+          margin-bottom: 0;
+        }
+        .form-floating {
+          @media (min-width: $md) {
+            margin-right: 12px;
+          }
+        }
+      }
+      input:not([type="checkbox"]) {
+        margin-bottom: 0;
+        padding-right: 54px !important;
+      }
+      label {
+        text-align: left;
+      }
+      button {
+        width: auto;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+    }
+  }
+  @media (min-width: $xl) {
+    max-width: 430px;
+    h1 {
+      text-align: left;
+    }
+    .me-form-container {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
+
+.cards-slider {
+  padding-left: 20px;
+  .swiper-wrapper {
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    max-width: 280px;
+    box-shadow: $hoverShadow100;
+    height: auto;
+    border-radius: 12px;
+    @media (min-width: $md) {
+      max-width: 320px;
+    }
+    @media (min-width: $lg) {
+      max-width: none;
+    }
+  }
+}
+
+.single-card {
+  height: 100%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: $hoverShadow400;
+  display: block !important;
+  img {
+    display: block;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 16px;
+  }
+  h4 {
+    color: $blueText;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  h5 {
+    color: $darkText;
+    margin-bottom: 8px;
+  }
+  p {
+    color: $lightText;
+    margin-bottom: 0;
+  }
+}
+
+.card-grid {
+  .card-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    .single-card:nth-child(odd) {
+      justify-self: flex-end;
+    }
+    .single-card:nth-child(even) {
+      margin-top: 40px;
+      justify-self: flex-start;
+    }
+    .single-card {
+      max-width: 340px;
+      // margin-top: 40px;
+      height: auto;
+      align-self: flex-start;
+      min-height: 304px;
+      // &:first-of-type{
+      //     margin-top: 0;
+      // }
+      // &:last-of-type{
+      //     margin-top: 80px;
+      // }
+    }
+  }
+}

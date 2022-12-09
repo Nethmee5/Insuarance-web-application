@@ -1,0 +1,77 @@
+$theme: #1c2a59;
+
+$blueText: #0094f7;
+$darkText: #02114e;
+$lightText: #545a75;
+$subtleText: #9c9991;
+$lightBlue: #e2f2fe;
+$primaryColor: #2f2f2f;
+$yellow: #fbd200;
+$transition: all 0.3s linear;
+
+$hoverShadow100: 0px 2px 4px -2px rgba(24, 39, 75, 0.12),
+  0px 4px 4px -2px rgba(24, 39, 75, 0.08);
+$hoverShadow200: 0px 4px 6px -4px rgba(24, 39, 75, 0.12),
+  0px 8px 8px -4px rgba(24, 39, 75, 0.08);
+$hoverShadow300: 0px 6px 8px -6px rgba(24, 39, 75, 0.12),
+  0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+$hoverShadow400: 0px 6px 12px -6px rgba(24, 39, 75, 0.12),
+  0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+$hoverShadow500: 0px 6px 14px -6px rgba(24, 39, 75, 0.1),
+  0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+$hoverShadow600: 0px 8px 18px -6px rgba(24, 39, 75, 0.12),
+  0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+$hoverShadow700: 0px 8px 22px -6px rgba(24, 39, 75, 0.12),
+  0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+$hoverShadow800: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+  0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+
+$avenir: "Avenir", "Arimo", sans-serif;
+$halvetica: "Helvetica Neue", "Montserrat", sans-serif;
+
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
+
+// These are to be used only for @media (min-width: $sm), not with (max-width: $sm)
+// These are similar to bootstrap breakpoints: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+$sm: 576px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1440px;
+$xxxl: 1680px;
+
+$tablet: $sm;
+$desktop: $xl;
+
+$border-color: rgba(0, 0, 0, 0.15);
+
+@mixin body-font() {
+  font-family: $avenir;
+}
+
+@mixin title-font() {
+  font-family: $avenir;
+}
+
+// Mixin for dynamic font sizes
+@mixin font(
+  $mobileFontSize,
+  $tabletFontSize,
+  $desktopFontSize,
+  $mobileLineHeight: normal,
+  $tabletLineHeight: normal,
+  $desktopLineHeight: normal
+) {
+  font-size: $mobileFontSize;
+  line-height: $mobileLineHeight;
+  @media (min-width: $tablet) {
+    font-size: $tabletFontSize;
+    line-height: $tabletLineHeight;
+  }
+  @media (min-width: $desktop) {
+    font-size: $desktopFontSize;
+    line-height: $desktopLineHeight;
+  }
+}
