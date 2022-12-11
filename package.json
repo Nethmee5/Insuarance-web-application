@@ -54,6 +54,18 @@
         "swiper": "^8.3.1",
         "telemetry": "^0.1.0"
       },
+  {
+      resolve: "gatsby-source-prismic",
+      options: {
+          repositoryName: "myrepo",
+          accessToken: `${process.env.API_KEY}`,
+          linkResolver: () => prismicLinkResolver,
+          htmlSerializer: () => prismicHtmlSerializer,
+    },
+    schemas: {
+       // all the schemas here
+    }
+}
   "devDependencies": {
     "gatsby-plugin-netlify": "^5.0.0",
     "prettier": "^2.7.1"
